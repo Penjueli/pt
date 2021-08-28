@@ -1,0 +1,79 @@
+ion-content {
+    
+    --background: #ccc url("img/K.jpg") no-repeat center center / cover;
+}
+
+.heading {
+    background: linear-gradient(rgb(122, 145, 63) , rgba(143, 45, 45, 0.219));
+    padding: 10px;
+    margin: 15px;
+    font-size: small;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.div1 {
+
+    background: linear-gradient(rgb(20, 124, 37) , rgba(138, 53, 53, 0.514));
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.div2 {
+
+    ion-list{
+
+            margin: 5px;
+    }
+
+
+    padding: 10px;
+    margin: 15px;
+    
+    ion-item {
+
+        padding: 15px;
+        margin: 12px;
+        border-radius: 10px;
+        --background-color: rgb(41, 59, 45);
+    }
+
+    
+
+    .div1mg {
+        background: url("img/F.PNG") no-repeat center center / cover;
+        padding:20px;
+        border-color: rgb(100, 219, 45);
+        border-style: groove;
+    }
+
+    .div2mg {
+        background: url("img/wz.jpg") no-repeat center center / cover;
+        padding:20px;
+        border-color: rgb(33, 114, 160);
+        border-style: groove;
+    }
+
+    .div3mg {
+        background: url("img/cs.png") no-repeat center center / cover;
+        padding:20px;
+        border-color: rgb(226, 213, 24);
+        border-style: groove;
+    }
+
+    .div4mg {
+        background: url("img/ll.png") no-repeat center center / cover;
+        padding:20px;
+        border-color: rgb(125, 56, 134);
+        border-style: groove;
+    }
+
+    p{
+        padding: 10px;
+    }
+
+}
+
+

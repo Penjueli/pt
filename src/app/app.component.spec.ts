@@ -21,3 +21,16 @@ describe('AppComponent', () => {
   // TODO: add more tests!
 
 });
+
+export class tab1.page implements OnInit {
+  type: string;
+  constructor() { }
+
+  ngOnInit() {
+    this.type = 'deposit';
+  }
+
+  segmentChanged(ev: any) {
+    console.log('Segment changed', ev);
+  }
+}

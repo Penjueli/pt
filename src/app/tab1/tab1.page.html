@@ -1,17 +1,87 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+        <ion-title> Home</ion-title>
+      </ion-toolbar>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+      <div class="heading">
+      <h1>Welcome just select the Games tab then select your game to view your Leaderboard remember this App is still in development so some items may not be available until future updates</h1>
+    </div>
+
+    <div padding class="div1">
+        <ion-segment [(ngModel)]="Home">
+          <ion-segment-button value="games">
+            <ion-icon name="game-controller-sharp"></ion-icon>
+            Games
+          </ion-segment-button>
+          
+          <ion-segment-button value="esport">
+            <ion-icon name="musical-notes-outline"></ion-icon>
+            E-sport Events
+          </ion-segment-button>
+        </ion-segment>
+      </div>
+
+
+
+
+
+      <div class="div2" [ngSwitch]="Home">
+        <ion-list *ngSwitchCase="'games'">
+            <ion-item>
+                <div item-start class="div1mg">
+                </div>
+          <p>Check your Fortnite Status as well as the leaderboard here</p>
+        <ion-button color="danger"><a href="https://fortnitetracker.com/leaderboards" class="btn btn-primary">Click Here</a></ion-button>
+    </ion-item>
+
+        <ion-item>
+            <div item-start class="div2mg">
+            </div>
+                <p>Check your Warzone Status as well as the leaderboard here</p>
+                <ion-button color="danger"><a href="https://cod.tracker.gg/warzone/leaderboards/stats/all/Wins" class="btn btn-primary">Click Here</a></ion-button>
+                </ion-item>
+
+             <ion-item>
+                <div item-start class="div3mg">
+                </div>
+                <p>Check your CS:GO Status as well as the leaderboard here</p>
+                <ion-button color="danger"><a href="https://csgostats.gg/leaderboards" class="btn btn-primary">Click Here</a></ion-button>
+                  </ion-item>
+
+            <ion-item>
+                <div item-start class="div4mg">
+                </div>
+                <p>Check your LoL Status as well as the leaderboard here</p>
+                <ion-button color="danger"><a href="https://www.leagueofgraphs.com/rankings/summoners" class="btn btn-primary">Click Here</a></ion-button>
+                </ion-item>
+          
+        </ion-list>
+      
+
+
+
+
+
+        <ion-list *ngSwitchCase="'esport'">
+          <ion-item>
+            <ion-thumbnail item-start>
+
+            </ion-thumbnail>
+            <h2>Coming Soon</h2>
+          </ion-item>
+        </ion-list>
+      </div>
+
+
+
 </ion-content>
+
+ 
+   
+
+
+
+
+
+
